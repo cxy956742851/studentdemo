@@ -1,0 +1,19 @@
+demo项目的结构为：
+基本架构：springboot+spring data jpa 
+
+parent 项目，demo项目的父依赖，用于管理项目用到的jar包的版本和其他公有的控制
+common 项目，一些工具类，在实际项目中可能时utils项目。用于存放一些公用工具类
+sample 项目，真正的demo项目，项目中提供了操作数据库中demo_class中的相关操作。
+
+任务：
+1、参考sample 对数据库中demo_student 表进行相关的操作。
+	操作包括：	a) jpa的增删改查操作。查询需要实现jpa按字段名称查询。比如对学生名的模糊查询
+				b) 使用原生的sql进行操作。
+				c) 表关联的操作。根据demo_class 中的班级名称，查询该班级下所有的学生记录
+2、熟悉common中的工具类的使用方法，特别时Result类和ResultUtil类的使用。
+3、自行搭建一个springboot + spring data jpa 的项目
+4、http的相关知识的了解。
+5、关于servlet的一些知识的熟悉，在springboot项目中整合 监听器、过滤器、拦截器和Servlet（可选）
+6、如何在非spring管理的java类中取到spring 容器中的类，并且调用其中的一些方法。（可选）
+
+可选任务可以咨询导师，任务完成后请通知各自的导师。
